@@ -1,0 +1,73 @@
+/* src/posts.css */
+
+/* Container for the posts */
+.posts-container {
+    padding: 20px;
+    max-width: 1200px;  /* Adjust to your desired width */
+    margin: 0 auto;
+  }
+  
+  /* Make the post list a flex container to align posts side by side */
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between the boxes */
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  /* Each individual post box */
+  .post-item {
+    width: calc(33.333% - 20px); /* 3 items per row, adjust for spacing */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Style for the post title */
+  .post-item h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Style for the post thumbnail (image) */
+  .post-item img.post-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Style for the author name */
+  .post-item p {
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Post content */
+  .post-item div {
+    margin-top: 10px;
+  }
+  
+  /* Hover effect for the post boxes */
+  .post-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsiveness: Adjust for smaller screens */
+  @media (max-width: 768px) {
+    .post-item {
+      width: calc(50% - 20px); /* 2 items per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .post-item {
+      width: 100%; /* 1 item per row on small screens */
+    }
+  }
+  

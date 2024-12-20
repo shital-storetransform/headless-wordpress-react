@@ -1,0 +1,161 @@
+/* Container for the product list */
+.products-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Title styling */
+.products-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the product list */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px; /* Limits the width of the product grid */
+  padding: 0 10px; /* Adds a little padding to the left and right */
+}
+
+/* Styling for each product box */
+.product-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Reduced the width of product items */
+  overflow: hidden;
+  margin: 0 auto; /* Centers each individual product item */
+}
+
+/* Hover effects for product items */
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Product name styling */
+.product-item h2 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Product price styling */
+.product-item p {
+  font-size: 1rem;
+  color: #444;
+  margin: 10px 0;
+}
+
+/* Link for "View Product" button */
+.product-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product-link:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  /* Adjust product grid for medium devices (tablets) */
+  .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust column width */
+  }
+
+  .products-container h1 {
+      font-size: 2.25rem; /* Slightly smaller title on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust product grid for mobile devices */
+  .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .products-container h1 {
+      font-size: 2rem; /* Adjust title font size for mobile */
+  }
+
+  .product-item {
+      padding: 12px; /* Reduce padding for smaller devices */
+  }
+
+  .product-item h2 {
+      font-size: 1rem; /* Smaller font size for product titles */
+  }
+
+  .product-link {
+      padding: 8px 15px; /* Adjust padding for mobile buttons */
+      font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust product grid and layout for very small devices */
+  .product-list {
+      grid-template-columns: 1fr; /* Single column for very small devices */
+  }
+
+  .products-container h1 {
+      font-size: 1.75rem; /* Smaller title font size for small screens */
+  }
+
+  .product-item {
+      padding: 10px; /* Further reduce padding for very small devices */
+      max-width: 90%; /* Ensure items do not overflow */
+  }
+
+  .product-item h2 {
+      font-size: 0.9rem; /* Further reduce product title size */
+  }
+
+  .product-link {
+      padding: 6px 12px; /* Smaller button padding */
+      font-size: 0.85rem; /* Smaller font size for buttons */
+  }
+  .products-container{
+    width: 90%;
+  }
+}

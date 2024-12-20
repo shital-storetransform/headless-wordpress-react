@@ -1,0 +1,117 @@
+/* Basic header styling */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  font-family: 'Arial', sans-serif;  /* Set a clean font */
+}
+
+.site-info h1,
+.site-info p {
+  margin: 0;
+}
+
+.site-info h1 {
+  font-size: 32px;  /* Larger title font size */
+  font-weight: 700;
+}
+
+.site-info p {
+  font-size: 16px;  /* Larger description font size */
+  font-weight: 300;
+}
+
+.site-logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+.site-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;  /* Center-align the nav items on desktop/laptop */
+  width: 100%;
+}
+
+.site-nav ul {
+  display: flex;
+  margin: 0;
+}
+
+.site-nav li {
+  margin-left: 30px;  /* Increased margin between menu items */
+  display: flex;
+  align-items: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;  /* Larger font size for menu items */
+  transition: color 0.3s, transform 0.3s;  /* Smooth transitions for hover effects */
+}
+
+.site-nav a:hover {
+  color: #f39c12;  /* Yellow hover color */
+  transform: scale(1.1);  /* Slightly scale up the text on hover */
+}
+
+.site-nav.open {
+  display: block;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.mobile-menu-toggle:hover {
+  color: #f39c12;  /* Change color on hover */
+}
+
+@media (max-width: 1024px) {
+  .site-nav {
+      justify-content: center;  /* Ensure nav is centered on laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+      display: none; /* Hide nav by default on mobile */
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .site-nav.open {
+      display: block; /* Show the menu when open */
+  }
+
+  .site-nav ul {
+      display: block;
+  }
+
+  .site-nav li {
+      margin: 10px 0;
+      text-align: center;  /* Center-align the menu items on mobile */
+  }
+
+  .mobile-menu-toggle {
+      display: block; /* Show hamburger icon on mobile */
+  }
+}

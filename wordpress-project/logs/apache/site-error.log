@@ -1,0 +1,29 @@
+[Tue Dec 17 15:00:50.409414 2024] [fcgid:warn] [pid 6108:tid 1348] [client 127.0.0.1:61346] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/update.php?action=upload-plugin
+[Tue Dec 17 15:00:50.410411 2024] [core:error] [pid 6108:tid 1348] [client 127.0.0.1:61346] End of script output before headers: index.php, referer: http://wordpress-project.local/wp-admin/update.php?action=upload-plugin
+[Tue Dec 17 15:08:41.209784 2024] [fcgid:warn] [pid 6108:tid 1348] [client 127.0.0.1:61489] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/update.php?action=upload-plugin
+[Tue Dec 17 15:08:43.588611 2024] [core:error] [pid 6108:tid 1348] [client 127.0.0.1:61489] End of script output before headers: index.php, referer: http://wordpress-project.local/wp-admin/update.php?action=upload-plugin
+[Tue Dec 17 15:09:24.068417 2024] [fcgid:warn] [pid 6108:tid 1348] [client 127.0.0.1:61500] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/?hello=buddyboss&is_new_install=1
+[Tue Dec 17 15:09:24.068417 2024] [core:error] [pid 6108:tid 1348] [client 127.0.0.1:61500] End of script output before headers: index.php, referer: http://wordpress-project.local/wp-admin/?hello=buddyboss&is_new_install=1
+[Tue Dec 17 15:09:49.463125 2024] [fcgid:warn] [pid 6108:tid 1352] [client 127.0.0.1:61582] mod_fcgid: read timeout from pipe
+[Tue Dec 17 15:09:49.463125 2024] [core:error] [pid 6108:tid 1352] [client 127.0.0.1:61582] End of script output before headers: index.php
+[Thu Dec 19 15:26:42.577379 2024] [fcgid:warn] [pid 14372:tid 1352] [client 127.0.0.1:55093] mod_fcgid: read timeout from pipe
+[Thu Dec 19 15:26:42.577379 2024] [core:error] [pid 14372:tid 1352] [client 127.0.0.1:55093] End of script output before headers: wp-cron.php
+[Thu Dec 19 15:28:49.937004 2024] [fcgid:warn] [pid 14372:tid 1340] [client 127.0.0.1:55533] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/plugins.php?plugin_status=upgrade
+[Thu Dec 19 15:28:49.937004 2024] [core:error] [pid 14372:tid 1340] [client 127.0.0.1:55533] End of script output before headers: admin-ajax.php, referer: http://wordpress-project.local/wp-admin/plugins.php?plugin_status=upgrade
+[Fri Dec 20 10:01:34.665422 2024] [fcgid:warn] [pid 988:tid 1344] [client 127.0.0.1:64535] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/
+[Fri Dec 20 10:01:34.665422 2024] [core:error] [pid 988:tid 1344] [client 127.0.0.1:64535] End of script output before headers: admin-ajax.php, referer: http://wordpress-project.local/wp-admin/
+[Fri Dec 20 10:01:44.667871 2024] [fcgid:warn] [pid 988:tid 1352] [client 127.0.0.1:64538] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/admin.php?page=buddyboss_theme_options
+[Fri Dec 20 10:01:44.667871 2024] [core:error] [pid 988:tid 1352] [client 127.0.0.1:64538] End of script output before headers: admin-ajax.php, referer: http://wordpress-project.local/wp-admin/admin.php?page=buddyboss_theme_options
+[Fri Dec 20 10:01:45.658224 2024] [fcgid:warn] [pid 988:tid 1340] [client 127.0.0.1:64541] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/
+[Fri Dec 20 10:01:45.658224 2024] [core:error] [pid 988:tid 1340] [client 127.0.0.1:64541] End of script output before headers: admin-ajax.php, referer: http://wordpress-project.local/
+[Fri Dec 20 10:37:29.449193 2024] [fcgid:warn] [pid 988:tid 1344] [client 127.0.0.1:49743] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/plugin-install.php?s=woocommerce&tab=search&type=term
+[Fri Dec 20 10:37:29.449193 2024] [core:error] [pid 988:tid 1344] [client 127.0.0.1:49743] End of script output before headers: admin-ajax.php, referer: http://wordpress-project.local/wp-admin/plugin-install.php?s=woocommerce&tab=search&type=term
+[Fri Dec 20 10:38:26.695044 2024] [access_compat:error] [pid 988:tid 1348] [client 127.0.0.1:49878] AH01797: client denied by server configuration: C:/Users/Master/Local Sites/wordpress-project/app/public/wp-content/uploads/woocommerce_uploads/
+[Fri Dec 20 12:14:09.214975 2024] [fcgid:warn] [pid 988:tid 1340] [client 127.0.0.1:56806] mod_fcgid: read timeout from pipe
+[Fri Dec 20 12:14:09.214975 2024] [core:error] [pid 988:tid 1340] [client 127.0.0.1:56806] End of script output before headers: index.php
+[Fri Dec 20 12:19:20.349764 2024] [fcgid:warn] [pid 988:tid 1352] [client 127.0.0.1:57259] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=plugins
+[Fri Dec 20 12:19:20.349764 2024] [core:error] [pid 988:tid 1352] [client 127.0.0.1:57259] End of script output before headers: index.php, referer: http://wordpress-project.local/wp-admin/admin.php?page=wc-admin&path=%2Fsetup-wizard&step=plugins
+[Fri Dec 20 12:20:07.531568 2024] [fcgid:warn] [pid 988:tid 1336] [client 127.0.0.1:57413] mod_fcgid: read timeout from pipe
+[Fri Dec 20 12:20:07.533563 2024] [core:error] [pid 988:tid 1336] [client 127.0.0.1:57413] End of script output before headers: wp-cron.php
+[Fri Dec 20 14:14:15.777547 2024] [fcgid:warn] [pid 988:tid 1348] [client 127.0.0.1:62180] mod_fcgid: read timeout from pipe, referer: http://wordpress-project.local/wp-admin/admin.php?page=bp-components
+[Fri Dec 20 14:14:15.777547 2024] [core:error] [pid 988:tid 1348] [client 127.0.0.1:62180] End of script output before headers: admin-ajax.php, referer: http://wordpress-project.local/wp-admin/admin.php?page=bp-components

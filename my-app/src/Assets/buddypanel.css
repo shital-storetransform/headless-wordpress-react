@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Toggle button styles */
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  right: 20px; /* Adjust position to avoid overlap */
+  background-color: #6200ea; /* Purple background */
+  border: none;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 2000; /* Ensure it stays on top */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for toggle button */
+.toggle-button:hover {
+  background-color: #5a00cc; /* Darker purple on hover */
+  transform: scale(1.1);
+}
+
+/* BuddyPanel default styles */
+.buddy-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px; /* Panel width when open */
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e1e, #333);
+  color: white;
+  padding: 20px;
+  box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.4s ease-in-out, width 0.4s ease;
+  z-index: 1500; /* Ensure the panel stays above other content */
+}
+
+/* Adjustments when the panel is closed */
+.buddy-panel.closed {
+  width: 80px; /* Reduced width when closed */
+}
+
+/* Adjust toggle button position when panel is closed */
+.buddy-panel.closed .toggle-button {
+  right: 20px; /* Bring it inside the panel */
+}
+
+/* Menu Section */
+.menu {
+  flex-grow: 1;
+  margin-top: 30px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icons inside the menu */
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  background-color: #292929;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 1000; /* Ensure the menu items are above background */
+}
+
+/* Hide text when panel is closed, icons should remain visible */
+.buddy-panel.closed .menu-item span {
+  display: none; /* Hide text */
+}
+
+.buddy-panel.closed .menu-item {
+  padding: 10px 0; /* Adjust padding for icon-only mode */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hide BuddyPanel and toggle button for small screens */
+  .buddy-panel, .toggle-button {
+    display: none; /* Hide the buddy panel and toggle button */
+  }
+
+  /* Adjust BuddyPanel width and positioning for mobile */
+  .buddy-panel {
+    width: 220px; /* Make panel slightly wider for mobile */
+  }
+
+  .buddy-panel.closed {
+    width: 70px; /* Smaller width when closed for mobile */
+    transform: translateX(0); /* Keep it visible */
+  }
+
+  /* Adjust toggle button positioning for mobile */
+  .toggle-button {
+    right: 10px; /* Position button closer to edge */
+    top: 12px; /* Adjust top to keep button at the correct height */
+    padding: 10px; /* Adjust padding for better visibility */
+    font-size: 16px; /* Smaller font for mobile */
+  }
+
+  /* Adjust menu items for mobile */
+  .menu {
+    margin-top: 20px; /* Reduce margin for mobile */
+  }
+
+  /* Adjust font size and padding for mobile */
+  .menu-item span {
+    font-size: 14px; /* Smaller font size for mobile */
+    margin-left: 10px; /* Less space between icon and text */
+  }
+
+  .menu-item {
+    padding: 8px 0; /* Smaller padding for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hide BuddyPanel and toggle button for very small screens */
+  .buddy-panel, .toggle-button {
+    display: none; /* Hide the buddy panel and toggle button */
+  }
+
+  /* Further adjustments for very small screens (e.g., phones in portrait mode) */
+  .buddy-panel {
+    width: 180px; /* Adjust width further */
+  }
+
+  .buddy-panel.closed {
+    width: 60px; /* Even narrower panel */
+  }
+
+  .toggle-button {
+    right: 5px; /* Keep closer to the edge */
+    top: 8px; /* Adjust button's vertical position */
+    font-size: 14px; /* Even smaller font */
+    padding: 8px; /* Reduce padding */
+  }
+
+  .menu-item {
+    padding: 6px 0; /* Even smaller padding */
+  }
+
+  .menu-item span {
+    font-size: 12px; /* Smaller font for very small screens */
+    margin-left: 5px; /* Less space */
+  }
+}

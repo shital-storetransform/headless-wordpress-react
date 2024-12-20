@@ -1,0 +1,54 @@
+/* src/Component/Footer.css */
+.footer {
+    background-color: #333;
+    color: white;
+    height: 200px; /* Define the height of the footer */
+    display: flex;
+    justify-content: center;  /* Horizontally center content */
+    align-items: center;      /* Vertically center content */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center;     /* Vertically center content */
+    width: 100%;
+    max-width: 1200px;
+    flex: 1;
+}
+
+.footer-column {
+    flex: 1;  /* Allow each column to take up equal space */
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.footer p {
+    font-size: 16px;
+    margin: 0; /* Remove margins */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-menu {
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout for menu items */
+    gap: 20px; /* Space between menu items */
+}
