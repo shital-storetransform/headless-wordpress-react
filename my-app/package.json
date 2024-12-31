@@ -7,7 +7,9 @@
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.97.1",
+    "webpack-dev-server": "^5.2.0"
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
